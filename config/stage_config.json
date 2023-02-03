@@ -7,7 +7,7 @@
             "short_period": 300
         },
         "vpn_checker": {
-            "enabled": false,
+            "enabled": true,
             "svc_name": "openvpn",
             "long_period": 300
         }

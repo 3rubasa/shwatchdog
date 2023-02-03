@@ -9,7 +9,7 @@ import (
 	"github.com/3rubasa/shwatchdog/watchdog"
 )
 
-const configPath = "./shagent.json"
+const configPath = "./shwatchdog.json"
 
 func main() {
 	var err error
