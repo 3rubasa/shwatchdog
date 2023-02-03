@@ -17,7 +17,7 @@ deploy_agent_vpn:
 	pscp -pw p ./bin/shwatchdog dima@172.27.208.8:/opt/shagent/shwatchdog
 
 deploy_config_vpn:
-	pscp -pw p ./config/prod_config.json dima@172.27.208.8:/opt/shagent/shwatchdog
+	pscp -pw p ./config/prod_config.json dima@172.27.208.8:/opt/shagent/shwatchdog.json
 
 start_svc_vpn:
 	plink -pw p dima@172.27.208.8 "sudo systemctl start shwatchdog.service"
