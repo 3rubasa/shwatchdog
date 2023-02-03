@@ -1,0 +1,15 @@
+{
+    "watchdog":{
+        "inet_checker": {
+            "enabled": true,
+            "url":"http://google.com",
+            "long_period": 1800,
+            "short_period": 300
+        },
+        "vpn_checker": {
+            "enabled": false,
+            "svc_name": "openvpn",
+            "long_period": 300
+        }
+    }
+}
