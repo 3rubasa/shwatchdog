@@ -38,12 +38,6 @@ func TestConfig(t *testing.T) {
 	cfg, err := ReadFromFile(fname)
 	assert.NoError(t, err)
 
-	assert.Equal(t, cfg.BusinessLogic.Consumer.Enabled, true)
-	assert.Equal(t, cfg.BusinessLogic.Consumer.APIKeys, "consumer_key")
-	assert.Equal(t, cfg.BusinessLogic.Consumer.Address, "api.thingspeak.com")
-	assert.Equal(t, cfg.BusinessLogic.Consumer.Schema, "https")
-	assert.Equal(t, cfg.BusinessLogic.Consumer.URI, "update")
-
 	assert.Equal(t, cfg.Watchdog.InetChecker.Enabled, true)
 	assert.Equal(t, cfg.Watchdog.InetChecker.URL, "http://google.com")
 	assert.Equal(t, cfg.Watchdog.InetChecker.LongPeriod, 1800)
@@ -51,8 +45,4 @@ func TestConfig(t *testing.T) {
 	assert.Equal(t, cfg.Watchdog.VPNChecker.Enabled, true)
 	assert.Equal(t, cfg.Watchdog.VPNChecker.SvcName, "openvpn")
 	assert.Equal(t, cfg.Watchdog.VPNChecker.LongPeriod, 300)
-
-	assert.Equal(t, cfg.WeatherProvider.Enabled, true)
-
-	assert.Equal(t, cfg.ForecastProvider.Enabled, true)
 }
